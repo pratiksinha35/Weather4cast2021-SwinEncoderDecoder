@@ -214,7 +214,7 @@ def get_trainer(options):
     trainer = pl.Trainer(accelerator="gpu",
                          devices=options.gpus,
                          max_epochs=options.epochs,
-                         progress_bar_refresh_rate=10,
+                        #  progress_bar_refresh_rate=10,
                          deterministic=True,
                          gradient_clip_val=1,  # to clip gradient value and prevent exploding gradient
                          gradient_clip_algorithm='value',
