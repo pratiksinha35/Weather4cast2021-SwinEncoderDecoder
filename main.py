@@ -56,7 +56,7 @@ class DataModule(pl.LightningDataModule):
         self.train = self.val = self.predict = self.held_out = None
         self.all_regions = self.core_regions = None
 
-    def setup(self):
+    def setup(self, stage=None):
         if self.params['use_all_region']:
             train_datasets = []
             val_datasets = []
