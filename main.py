@@ -211,7 +211,8 @@ def get_trainer(options):
 
     callbacks = [lr_monitor, checkpoint_callback, early_stop_callback]
 
-    trainer = pl.Trainer(gpus=options.gpus,
+    trainer = pl.Trainer(accelerator="gpu",
+                         devices=options.gpus,
                          max_epochs=options.epochs,
                          progress_bar_refresh_rate=10,
                          deterministic=True,
