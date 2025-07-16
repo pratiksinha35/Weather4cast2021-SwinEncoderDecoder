@@ -475,4 +475,256 @@ GPU available: True (cuda), used: True
 TPU available: False, using: 0 TPU cores
 HPU available: False, using: 0 HPUs
 Extra variables:  | spatial_dim: (256, 256)  | collapse_time: False | in channels depth: 4 | len_seq_in: 4
-Namespace(gpus='1', region='R1', use_all_region=True, mode='test', held_out=False, competition='stage-1', collapse_time=False, use_static=False, use_time_slot=False, use_cloud_type=False, use_all_variables=False, populate_mask=True, precision=32, epochs=100, batch_size=1, manual_seed=0, log_dir='logs', model_dir='', name='ALL_real_swinencoder3d_688080', time_code='20210630T224355', initial_epoch=58, memory_efficient=True, net_type='real', patch_size=2, nb_layers=4, sf=16, stages=3, classifier_activation='sigmoid', modify_activation=True, inplace_activation=True, dropout=0.0, optimizer='adam', lr=0.0001, momentum=0.9, beta_1=0.9, beta_2=0.999, epsilon=1e-08, weight_decay=1e-06, workers=6, in_channels=4, n_classes=128, depth=4, wf=6, padding=True, batch_norm=False, up_mode='upconv', data_path='D:/KU_Works/Datasets/Weather4cast/2021/w4c-core-stage-1/R1', static_paths={'l': 'D:/KU_Works/Datasets/Weather4cast/2021/statics/Navigation_of_S_NWC_CT_MSG4_Europe-VISIR_20201106T120000Z.nc', 'e': 'D:/KU_Works/Datasets/Weather4cast/2021/statics/S_NWC_TOPO_MSG4_+000.0_Europe-VISIR.raw'}, train_splits='/home/prati/Weather4cast2021-SwinEncoderDecoder/splits.csv', test_splits='/home/prati/Weather4cast2021-SwinEncoderDecoder/test_split.json', black_list_path='/home/prati/Weather4cast2021-SwinEncoderDecoder/blacklist.json', extra_data='', target_vars=['temperature', 'crr_intensity', 'asii_turb_trop_prob', 'cma'], products={'CTTH': ['temperature'], 'CRR': ['crr_intensity'], 'ASII': ['asii_turb_trop_prob'], 'CMA': ['cma']}, input_vars=['temperature', 'crr_intensity', 'asii_turb_trop_prob', 'cma'], weigths={'temperature': 0.25, 'crr_intensity': 0.25, 'asii_turb_trop_prob': 0.25, 'cma': 0.25}, spatial_dim=(256, 256), crop_static={'x_start': 1850, 'y_start': 760, 'size': 256}, crop_in=None, crop_out=None, train_region_id='R1_mse', region_id='R1', len_seq_in=4, bins_to_predict=32, len_seq_out=32, day_bins=96, seq_mode='sliding_window', width=256, height=256, control_params={'use_all_variables': False, 'use_cloud_type': False, 'use_time_slot': False, 'use_static': False}, preprocess={'source': {'cma': {'fill_value': 0, 'max_value': 1, 'add_offset': 0, 'scale_factor': 1}, 'temperature': {'fill_value': 0, 'max_value': 35000, 'add_offset': 130, 'scale_factor': np.float32(0.01)}, 'crr_intensity': {'fill_value': 0, 'max_value': 500, 'add_offset': 0, 'scale_factor': np.float32(0.1)}, 'asii_turb_trop_prob': {'fill_value': 0, 'max_value': 100, 'add_offset': 0, 'scale_factor': 1}}, 'target': {'cma': {'fill_value': nan, 'max_value': 1, 'add_offset': 0, 'scale_factor': 1}, 'temperature': {'fill_value': nan, 'max_value': 35000, 'add_offset': 130, 'scale_factor': np.float32(0.01)}, 'crr_intensity': {'fill_value': nan, 'max_value': 500, 'add_offse
+Namespace(gpus='1', region='R1', use_all_region=True, mode='test', held_out=False, competition='stage-1', collapse_time=False, use_static=False, use_time_slot=False, use_cloud_type=False, use_all_variables=False, populate_mask=True, precision=32, epochs=100, batch_size=1, manual_seed=0, log_dir='logs', model_dir='', name='ALL_real_swinencoder3d_688080', time_code='20210630T224355', initial_epoch=58, memory_efficient=True, net_type='real', patch_size=2, nb_layers=4, sf=16, stages=3, classifier_activation='sigmoid', modify_activation=True, inplace_activation=True, dropout=0.0, optimizer='adam', lr=0.0001, momentum=0.9, beta_1=0.9, beta_2=0.999, epsilon=1e-08, weight_decay=1e-06, workers=6, in_channels=4, n_classes=128, depth=4, wf=6, padding=True, batch_norm=False, up_mode='upconv', data_path='D:/KU_Works/Datasets/Weather4cast/2021/w4c-core-stage-1/R1', static_paths={'l': 'D:/KU_Works/Datasets/Weather4cast/2021/statics/Navigation_of_S_NWC_CT_MSG4_Europe-VISIR_20201106T120000Z.nc', 'e': 'D:/KU_Works/Datasets/Weather4cast/2021/statics/S_NWC_TOPO_MSG4_+000.0_Europe-VISIR.raw'}, train_splits='/home/prati/Weather4cast2021-SwinEncoderDecoder/splits.csv', test_splits='/home/prati/Weather4cast2021-SwinEncoderDecoder/test_split.json', black_list_path='/home/prati/Weather4cast2021-SwinEncoderDecoder/blacklist.json', extra_data='', target_vars=['temperature', 'crr_intensity', 'asii_turb_trop_prob', 'cma'], products={'CTTH': ['temperature'], 'CRR': ['crr_intensity'], 'ASII': ['asii_turb_trop_prob'], 'CMA': ['cma']}, input_vars=['temperature', 'crr_intensity', 'asii_turb_trop_prob', 'cma'], weigths={'temperature': 0.25, 'crr_intensity': 0.25, 'asii_turb_trop_prob': 0.25, 'cma': 0.25}, spatial_dim=(256, 256), crop_static={'x_start': 1850, 'y_start': 760, 'size': 256}, crop_in=None, crop_out=None, train_region_id='R1_mse', region_id='R1', len_seq_in=4, bins_to_predict=32, len_seq_out=32, day_bins=96, seq_mode='sliding_window', width=256, height=256, control_params={'use_all_variables': False, 'use_cloud_type': False, 'use_time_slot': False, 'use_static': False}, preprocess={'source': {'cma': {'fill_value': 0, 'max_value': 1, 'add_offset': 0, 'scale_factor': 1}, 'temperature': {'fill_value': 0, 'max_value': 35000, 'add_offset': 130, 'scale_factor': np.float32(0.01)}, 'crr_intensity': {'fill_value': 0, 'max_value': 500, 'add_offset': 0, 'scale_factor': np.float32(0.1)}, 'asii_turb_trop_prob': {'fill_value': 0, 'max_value': 100, 'add_offset': 0, 'scale_factor': 1}}, 'target': {'cma': {'fill_value': nan, 'max_value': 1, 'add_offset': 0, 'scale_factor': 1}, 'temperature': {'fill_value': nan, 'max_value': 35000, 'add_offset': 130, 'scale_factor': np.float32(0.01)}, 'crr_intensity': {'fill_value': nan, 'max_value': 500, 'add_offset': 0, 'scale_factor': np.float32(0.1)}, 'asii_turb_trop_prob': {'fill_value': nan, 'max_value': 100, 'add_offset': 0, 'scale_factor': 1}}}, train_dims=49794, core_regions=['R1', 'R2', 'R3'], all_regions=['R1', 'R2', 'R3', 'R4', 'R5', 'R6'], filename='ALL_real_swinencoder3d_688080', versiondir='logs/ALL_real_swinencoder3d_688080/20210630T224355')
+-----------------
+--- TEST MODE ---
+-----------------
+You are using a CUDA device ('NVIDIA GeForce RTX 4060 Laptop GPU') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+Traceback (most recent call last):
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 396, in <module>
+    main()
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 392, in main
+    train(options.region, options.mode, options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 315, in train
+    trainer.test(model, datamodule=data)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 775, in test
+    return call._call_and_handle_interrupt(
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 48, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 817, in _test_impl
+    results = self._run(model, ckpt_path=ckpt_path)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 974, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 107, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 198, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+TypeError: DataModule.setup() got an unexpected keyword argument 'stage'
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(vs_env) [01;31m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hpython main.py --g 1 --use_all_region True --mode test --name ALL_real_swinencoder3d_688080 --time-code 20210630T224355 --initial-epoch 58[K[A[18C[32mp[32my[32mt[32mh[32mo[32mn[39m [4mm[4ma[4mi[4mn[4m.[4mp[4my[24m[1B[32D[?1l>[?2004l
+]2;python main.py --g 1 --use_all_region True --mode test --name  --time-code   ]1;python/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Using data for region R1 | size: 256 | Nile Region
+Seed set to 0
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R4 | size: 256 | Central
+Maghreb
+Using data for region R5 | size: 256 | South
+Mediterranean
+Using data for region R6 | size: 256 | Central
+Europe
+------------------------------------------------------------------------------------------------------------------------
+      Layer (type)                                  Input Shape             Output Shape         Param #     Tr. Param #
+========================================================================================================================
+        Identity-1                          [1, 4, 4, 256, 256]      [1, 4, 4, 256, 256]               0               0
+    PatchEmbed3D-2                          [1, 4, 4, 256, 256]     [1, 16, 4, 128, 128]             304             304
+         Dropout-3                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]               0               0
+      BasicLayer-4                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          18,528          18,528
+      BasicLayer-5                         [1, 16, 4, 128, 128]       [1, 32, 4, 64, 64]          58,400          58,400
+      BasicLayer-6                           [1, 32, 4, 64, 64]       [1, 64, 4, 32, 32]         213,792         213,792
+     DecodeLayer-7       [1, 64, 4, 32, 32], [1, 64, 4, 32, 32]       [1, 64, 4, 32, 32]         277,824         277,824
+     DecodeLayer-8       [1, 64, 4, 32, 32], [1, 32, 4, 64, 64]       [1, 32, 4, 64, 64]          87,104          87,104
+     DecodeLayer-9     [1, 32, 4, 64, 64], [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          30,528          30,528
+           Head-10                         [1, 16, 4, 128, 128]     [1, 32, 4, 256, 256]           1,600           1,600
+========================================================================================================================
+Total params: 688,080
+Trainable params: 688,080
+Non-trainable params: 0
+------------------------------------------------------------------------------------------------------------------------
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+Extra variables:  | spatial_dim: (256, 256)  | collapse_time: False | in channels depth: 4 | len_seq_in: 4
+Namespace(gpus='1', region='R1', use_all_region=True, mode='test', held_out=False, competition='stage-1', collapse_time=False, use_static=False, use_time_slot=False, use_cloud_type=False, use_all_variables=False, populate_mask=True, precision=32, epochs=100, batch_size=1, manual_seed=0, log_dir='logs', model_dir='', name='ALL_real_swinencoder3d_688080', time_code='20210630T224355', initial_epoch=58, memory_efficient=True, net_type='real', patch_size=2, nb_layers=4, sf=16, stages=3, classifier_activation='sigmoid', modify_activation=True, inplace_activation=True, dropout=0.0, optimizer='adam', lr=0.0001, momentum=0.9, beta_1=0.9, beta_2=0.999, epsilon=1e-08, weight_decay=1e-06, workers=6, in_channels=4, n_classes=128, depth=4, wf=6, padding=True, batch_norm=False, up_mode='upconv', data_path='D:/KU_Works/Datasets/Weather4cast/2021/w4c-core-stage-1/R1', static_paths={'l': 'D:/KU_Works/Datasets/Weather4cast/2021/statics/Navigation_of_S_NWC_CT_MSG4_Europe-VISIR_20201106T120000Z.nc', 'e': 'D:/KU_Works/Datasets/Weather4cast/2021/statics/S_NWC_TOPO_MSG4_+000.0_Europe-VISIR.raw'}, train_splits='/home/prati/Weather4cast2021-SwinEncoderDecoder/splits.csv', test_splits='/home/prati/Weather4cast2021-SwinEncoderDecoder/test_split.json', black_list_path='/home/prati/Weather4cast2021-SwinEncoderDecoder/blacklist.json', extra_data='', target_vars=['temperature', 'crr_intensity', 'asii_turb_trop_prob', 'cma'], products={'CTTH': ['temperature'], 'CRR': ['crr_intensity'], 'ASII': ['asii_turb_trop_prob'], 'CMA': ['cma']}, input_vars=['temperature', 'crr_intensity', 'asii_turb_trop_prob', 'cma'], weigths={'temperature': 0.25, 'crr_intensity': 0.25, 'asii_turb_trop_prob': 0.25, 'cma': 0.25}, spatial_dim=(256, 256), crop_static={'x_start': 1850, 'y_start': 760, 'size': 256}, crop_in=None, crop_out=None, train_region_id='R1_mse', region_id='R1', len_seq_in=4, bins_to_predict=32, len_seq_out=32, day_bins=96, seq_mode='sliding_window', width=256, height=256, control_params={'use_all_variables': False, 'use_cloud_type': False, 'use_time_slot': False, 'use_static': False}, preprocess={'source': {'cma': {'fill_value': 0, 'max_value': 1, 'add_offset': 0, 'scale_factor': 1}, 'temperature': {'fill_value': 0, 'max_value': 35000, 'add_offset': 130, 'scale_factor': np.float32(0.01)}, 'crr_intensity': {'fill_value': 0, 'max_value': 500, 'add_offset': 0, 'scale_factor': np.float32(0.1)}, 'asii_turb_trop_prob': {'fill_value': 0, 'max_value': 100, 'add_offset': 0, 'scale_factor': 1}}, 'target': {'cma': {'fill_value': nan, 'max_value': 1, 'add_offset': 0, 'scale_factor': 1}, 'temperature': {'fill_value': nan, 'max_value': 35000, 'add_offset': 130, 'scale_factor': np.float32(0.01)}, 'crr_intensity': {'fill_value': nan, 'max_value': 500, 'add_offset': 0, 'scale_factor': np.float32(0.1)}, 'asii_turb_trop_prob': {'fill_value': nan, 'max_value': 100, 'add_offset': 0, 'scale_factor': 1}}}, train_dims=49794, core_regions=['R1', 'R2', 'R3'], all_regions=['R1', 'R2', 'R3', 'R4', 'R5', 'R6'], filename='ALL_real_swinencoder3d_688080', versiondir='logs/ALL_real_swinencoder3d_688080/20210630T224355')
+-----------------
+--- TEST MODE ---
+-----------------
+You are using a CUDA device ('NVIDIA GeForce RTX 4060 Laptop GPU') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R4 | size: 256 | Central
+Maghreb
+Using data for region R5 | size: 256 | South
+Mediterranean
+Using data for region R6 | size: 256 | Central
+Europe
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing: |                                                                                                                            | 0/? [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 396, in <module>
+    main()
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 392, in main
+    train(options.region, options.mode, options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 315, in train
+    trainer.test(model, datamodule=data)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 775, in test
+    return call._call_and_handle_interrupt(
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 48, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 817, in _test_impl
+    results = self._run(model, ckpt_path=ckpt_path)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1012, in _run
+    results = self._run_stage()
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1049, in _run_stage
+    return self._evaluation_loop.run()
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/loops/utilities.py", line 179, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 124, in run
+    self.on_run_start()
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 286, in on_run_start
+    self._on_evaluation_epoch_start()
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 367, in _on_evaluation_epoch_start
+    call._call_lightning_module_hook(trainer, hook_name, *args, **kwargs)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 176, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/model_pl.py", line 83, in on_test_epoch_start
+    ckpt_name = str(os.path.basename(self.trainer.resume_from_checkpoint))
+AttributeError: 'Trainer' object has no attribute 'resume_from_checkpoint'
+Testing: |          | 0/? [00:00<?, ?it/s]                                                                                                                  
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(vs_env) [01;31m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hpython main.py --g 1 --use_all_region True --mode test --name ALL_real_swinencoder3d_688080 --time-code 20210630T224355 --initial-epoch 58[K[A[18C[32mp[32my[32mt[32mh[32mo[32mn[39m [4mm[4ma[4mi[4mn[4m.[4mp[4my[24m[1B[32D[?1l>[?2004l
+]2;python main.py --g 1 --use_all_region True --mode test --name  --time-code   ]1;python/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Using data for region R1 | size: 256 | Nile Region
+Seed set to 0
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R4 | size: 256 | Central
+Maghreb
+Using data for region R5 | size: 256 | South
+Mediterranean
+Using data for region R6 | size: 256 | Central
+Europe
+------------------------------------------------------------------------------------------------------------------------
+      Layer (type)                                  Input Shape             Output Shape         Param #     Tr. Param #
+========================================================================================================================
+        Identity-1                          [1, 4, 4, 256, 256]      [1, 4, 4, 256, 256]               0               0
+    PatchEmbed3D-2                          [1, 4, 4, 256, 256]     [1, 16, 4, 128, 128]             304             304
+         Dropout-3                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]               0               0
+      BasicLayer-4                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          18,528          18,528
+      BasicLayer-5                         [1, 16, 4, 128, 128]       [1, 32, 4, 64, 64]          58,400          58,400
+      BasicLayer-6                           [1, 32, 4, 64, 64]       [1, 64, 4, 32, 32]         213,792         213,792
+     DecodeLayer-7       [1, 64, 4, 32, 32], [1, 64, 4, 32, 32]       [1, 64, 4, 32, 32]         277,824         277,824
+     DecodeLayer-8       [1, 64, 4, 32, 32], [1, 32, 4, 64, 64]       [1, 32, 4, 64, 64]          87,104          87,104
+     DecodeLayer-9     [1, 32, 4, 64, 64], [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          30,528          30,528
+           Head-10                         [1, 16, 4, 128, 128]     [1, 32, 4, 256, 256]           1,600           1,600
+========================================================================================================================
+Total params: 688,080
+Trainable params: 688,080
+Non-trainable params: 0
+------------------------------------------------------------------------------------------------------------------------
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+Extra variables:  | spatial_dim: (256, 256)  | collapse_time: False | in channels depth: 4 | len_seq_in: 4
+Namespace(gpus='1', region='R1', use_all_region=True, mode='test', held_out=False, competition='stage-1', collapse_time=False, use_static=False, use_time_slot=False, use_cloud_type=False, use_all_variables=False, populate_mask=True, precision=32, epochs=100, batch_size=1, manual_seed=0, log_dir='logs', model_dir='', name='ALL_real_swinencoder3d_688080', time_code='20210630T224355', initial_epoch=58, memory_efficient=True, net_type='real', patch_size=2, nb_layers=4, sf=16, stages=3, classifier_activation='sigmoid', modify_activation=True, inplace_activation=True, dropout=0.0, optimizer='adam', lr=0.0001, momentum=0.9, beta_1=0.9, beta_2=0.999, epsilon=1e-08, weight_decay=1e-06, workers=6, in_channels=4, n_classes=128, depth=4, wf=6, padding=True, batch_norm=False, up_mode='upconv', data_path='D:/KU_Works/Datasets/Weather4cast/2021/w4c-core-stage-1/R1', static_paths={'l': 'D:/KU_Works/Datasets/Weather4cast/2021/statics/Navigation_of_S_NWC_CT_MSG4_Europe-VISIR_20201106T120000Z.nc', 'e': 'D:/KU_Works/Datasets/Weather4cast/2021/statics/S_NWC_TOPO_MSG4_+000.0_Europe-VISIR.raw'}, train_splits='/home/prati/Weather4cast2021-SwinEncoderDecoder/splits.csv', test_splits='/home/prati/Weather4cast2021-SwinEncoderDecoder/test_split.json', black_list_path='/home/prati/Weather4cast2021-SwinEncoderDecoder/blacklist.json', extra_data='', target_vars=['temperature', 'crr_intensity', 'asii_turb_trop_prob', 'cma'], products={'CTTH': ['temperature'], 'CRR': ['crr_intensity'], 'ASII': ['asii_turb_trop_prob'], 'CMA': ['cma']}, input_vars=['temperature', 'crr_intensity', 'asii_turb_trop_prob', 'cma'], weigths={'temperature': 0.25, 'crr_intensity': 0.25, 'asii_turb_trop_prob': 0.25, 'cma': 0.25}, spatial_dim=(256, 256), crop_static={'x_start': 1850, 'y_start': 760, 'size': 256}, crop_in=None, crop_out=None, train_region_id='R1_mse', region_id='R1', len_seq_in=4, bins_to_predict=32, len_seq_out=32, day_bins=96, seq_mode='sliding_window', width=256, height=256, control_params={'use_all_variables': False, 'use_cloud_type': False, 'use_time_slot': False, 'use_static': False}, preprocess={'source': {'cma': {'fill_value': 0, 'max_value': 1, 'add_offset': 0, 'scale_factor': 1}, 'temperature': {'fill_value': 0, 'max_value': 35000, 'add_offset': 130, 'scale_factor': np.float32(0.01)}, 'crr_intensity': {'fill_value': 0, 'max_value': 500, 'add_offset': 0, 'scale_factor': np.float32(0.1)}, 'asii_turb_trop_prob': {'fill_value': 0, 'max_value': 100, 'add_offset': 0, 'scale_factor': 1}}, 'target': {'cma': {'fill_value': nan, 'max_value': 1, 'add_offset': 0, 'scale_factor': 1}, 'temperature': {'fill_value': nan, 'max_value': 35000, 'add_offset': 130, 'scale_factor': np.float32(0.01)}, 'crr_intensity': {'fill_value': nan, 'max_value': 500, 'add_offset': 0, 'scale_factor': np.float32(0.1)}, 'asii_turb_trop_prob': {'fill_value': nan, 'max_value': 100, 'add_offset': 0, 'scale_factor': 1}}}, train_dims=49794, core_regions=['R1', 'R2', 'R3'], all_regions=['R1', 'R2', 'R3', 'R4', 'R5', 'R6'], filename='ALL_real_swinencoder3d_688080', versiondir='logs/ALL_real_swinencoder3d_688080/20210630T224355')
+-----------------
+--- TEST MODE ---
+-----------------
+You are using a CUDA device ('NVIDIA GeForce RTX 4060 Laptop GPU') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R4 | size: 256 | Central
+Maghreb
+Using data for region R5 | size: 256 | South
+Mediterranean
+Using data for region R6 | size: 256 | Central
+Europe
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing: |                                                                                                                            | 0/? [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 396, in <module>
+    main()
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 392, in main
+    train(options.region, options.mode, options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 315, in train
+    trainer.test(model, datamodule=data)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 775, in test
+    return call._call_and_handle_interrupt(
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 48, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 817, in _test_impl
+    results = self._run(model, ckpt_path=ckpt_path)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1012, in _run
+    results = self._run_stage()
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1049, in _run_stage
+    return self._evaluation_loop.run()
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/loops/utilities.py", line 179, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 138, in run
+    batch, batch_idx, dataloader_idx = next(data_fetcher)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/loops/fetchers.py", line 134, in __next__
+    batch = super().__next__()
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/loops/fetchers.py", line 61, in __next__
+    batch = next(self.iterator)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/utilities/combined_loader.py", line 341, in __next__
+    out = next(self._iterator)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/utilities/combined_loader.py", line 142, in __next__
+    out = next(self.iterators[0])
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1465, in _next_data
+    return self._process_data(data)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1491, in _process_data
+    data.reraise()
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/torch/_utils.py", line 715, in reraise
+    raise exception
+AssertionError: Caught AssertionError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 351, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/torch/utils/data/dataset.py", line 350, in __getitem__
+    return self.datasets[dataset_idx][sample_idx]
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/utils/w4c_dataloader.py", line 177, in __getitem__
+    return self.load_in_out(day_id, in_start_id)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/utils/w4c_dataloader.py", line 137, in load_in_out
+    in_seq, in_info = self.load_in_seq(day_id, in_start_id)  # , lead_time)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/utils/w4c_dataloader.py", line 97, in load_in_seq
+    in_seq, in_info = data_utils.get_sequence_netcdf4(self.len_seq_in, in_start_id, day_id,
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/utils/data_utils.py", line 449, in get_sequence_netcdf4
+    prod, masks, channels = get_products_netcdf4(day_id, hhmmss[time_bin], products, path,
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/utils/data_utils.py", line 402, in get_products_netcdf4
+    prod, mask = get_file_netcdf4(product, day_in_year, time, attributes,
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/utils/data_utils.py", line 347, in get_file_netcdf4
+    ds = read_netcdf4(product, day_in_year, time, root)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/utils/data_utils.py", line 335, in read_netcdf4
+    assert len(file_path)==1, f" Error with file in {path} ----> all these files were found: {file_path}"
+AssertionError:  Error with file in D:/KU_Works/Datasets/Weather4cast/2021/w4c-core-stage-1/R1/test/2019047/CTTH/S_NWC_CTTH_MSG*_Europe-VISIR_*T170000Z.nc ----> all these files were found: []
+
+Testing: |          | 0/? [00:00<?, ?it/s]                                                                                                                  
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(vs_env) [01;31m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[90mxit[39m[1m[31me[1m[31mz[0m[39m[39m [39m [1m[31me[1m[31mz[1m[31mi[0m[39m[1m[31me[1m[31mz[0m[39m[0m[39m [1m[31me[0m[39m[0m[39m [1m[31me[0m[39m[90mxit[39m[1m[31me[1m[31mx[0m[39m[0m[32me[0m[32mx[39m[32me[32mx[32mi[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[1m[31mi[1m[31mt[0m[39m[0m[32me[0m[32mx[0m[32mi[0m[32mt[39m[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2025-07-16 16:59:32-04:00 [COMMAND_EXIT_CODE="1"]
