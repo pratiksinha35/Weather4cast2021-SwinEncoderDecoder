@@ -225,7 +225,7 @@ def get_trainer(options):
                          num_sanity_val_steps=0,
                          # accelerator='ddp',
                          logger=logger,
-                         resume_from_checkpoint=resume_from_checkpoint,
+                        #  resume_from_checkpoint=resume_from_checkpoint,
                          num_nodes=1,
                          precision=options.precision if hasattr(options, 'precision') else 16,
                          )
@@ -300,7 +300,7 @@ def train(region_id, mode, options=None):
         print("-----------------")
         print("-- TRAIN MODE ---")
         print("-----------------")
-        trainer.fit(model, datamodule=data)
+        trainer.fit(model, ckpt_path=resume_from_checkpoint, datamodule=data)
     # elif mode == 'val':
     #     print("-----------------")
     #     print("-- Validation only for metric collection---")
