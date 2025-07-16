@@ -80,7 +80,7 @@ class Model(pl.LightningModule):
         self.create_inference_dirs()
 
     def on_test_epoch_start(self):
-        ckpt_name = str(os.path.basename(self.trainer.resume_from_checkpoint))
+        ckpt_name = str(os.path.basename(self.ckpt_path)) if hasattr(self, 'ckpt_path') else 'no_ckpt'
         folder_name = ckpt_name.split('.')[0].split('-')[0].split('=')[-1]
         epoch_dir = os.path.join(self.args.versiondir, 'test', f"epoch={folder_name}")
         self.core_dir = os.path.join(epoch_dir, f'core_{folder_name}')
