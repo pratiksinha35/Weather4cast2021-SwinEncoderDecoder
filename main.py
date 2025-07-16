@@ -193,17 +193,6 @@ def get_trainer(options):
                        version=options.time_code,
                        ) 
 
-    resume_from_checkpoint = None
-    if options.name and options.time_code:
-        checkpoint_dir = os.path.join(options.versiondir, 'checkpoints')
-        if options.initial_epoch == -1:
-            checkpoint_name = 'last.ckpt'
-        else:
-            format_str = f"epoch={options.initial_epoch:02g}"
-            checkpoint_names = os.listdir(checkpoint_dir)
-            checkpoint_name = checkpoint_names[[t.startswith(format_str) for t in checkpoint_names].index(True)]
-        resume_from_checkpoint = os.path.join(checkpoint_dir, checkpoint_name)
-
 
     checkpoint_callback = ModelCheckpoint(monitor='val_loss', mode='min', save_top_k=3,
                                           save_last=True, verbose=False,
@@ -212,7 +201,7 @@ def get_trainer(options):
     callbacks = [lr_monitor, checkpoint_callback, early_stop_callback]
 
     trainer = pl.Trainer(accelerator="gpu",
-                         devices=options.gpus,
+                         devices=int(options.gpus),
                          max_epochs=options.epochs,
                         #  progress_bar_refresh_rate=10,
                          deterministic=True,
@@ -231,6 +220,19 @@ def get_trainer(options):
                          )
 
     return trainer
+
+def checkpoint(options):
+
+    resume_from_checkpoint = None
+    if options.name and options.time_code:
+        checkpoint_dir = os.path.join(options.versiondir, 'checkpoints')
+        if options.initial_epoch == -1:
+            checkpoint_name = 'last.ckpt'
+        else:
+            format_str = f"epoch={options.initial_epoch:02g}"
+            checkpoint_names = os.listdir(checkpoint_dir)
+            checkpoint_name = checkpoint_names[[t.startswith(format_str) for t in checkpoint_names].index(True)]
+        resume_from_checkpoint = os.path.join(checkpoint_dir, checkpoint_name)
 
 
 def train(region_id, mode, options=None):
@@ -284,7 +286,7 @@ def train(region_id, mode, options=None):
     # ------
     # Model
     # -----
-    checkpoint_path = trainer.resume_from_checkpoint
+    checkpoint_path = checkpoint(options)
     if checkpoint_path is not None:
         model = Model.load_from_checkpoint(checkpoint_path)
     else:
