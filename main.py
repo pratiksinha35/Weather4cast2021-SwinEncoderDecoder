@@ -18,7 +18,7 @@ import torch
 
 from pytorch_lightning.callbacks.lr_monitor import LearningRateMonitor
 from pytorch_lightning.callbacks import ModelCheckpoint, EarlyStopping
-from pytorch_lightning.plugins import DDPPlugin
+from pytorch_lightning.strategies import DDPStrategy
 from pytorch_lightning.loggers import CSVLogger
 
 import config as cf
