@@ -1,0 +1,478 @@
+Script started on 2025-07-16 15:20:45-04:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="156" LINES="42"]
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(base) [01;32m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [K[?1h=[?2004h[0m[27m[24m[J(base) [01;32m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [Kc[1m[31mc[0m[39m[1m[31mc[0m[39m[90mlear[39m[1m[31mc[1m[31mo[0m[39m[39m [39m [39m [90mnda activate vs_env[39m[19D[1m[31mc[1m[31mo[1m[31mn[0m[39m[1m[31mn[1m[31md[0m[39m[1m[31md[1m[31ma[0m[39m[0m[32mc[0m[32mo[0m[32mn[0m[32md[0m[32ma[39m[32ma[32m [39m[32ma[39m[39m [39ma[39mc[39mt[39mi[39mv[39ma[39mt[39me[39m [39mv[39ms[39m_[39me[39mn[39mv[?1l>[?2004l
+]2;conda activate vs_env]1;conda[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(vs_env) [01;32m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hc[1m[31mc[0m[39m[1m[31mc[0m[39m[90monda activate vs_env[39m[20D[1m[31mc[1m[31ml[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[90mear[39m[1m[31mc[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[1m[31ma[1m[31mr[0m[39m[0m[32mc[0m[32ml[0m[32me[0m[32ma[0m[32mr[39m[?1l>[?2004l
+]2;clear]1;clear[H[2J[3J[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(vs_env) [01;32m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hp[1m[31mp[0m[39m[1m[31mp[0m[39m[90mython main.py --g 0 --use_all_region True --mode test --name ALL_real_swinencoder3d_688080 --t[90mi[90mme-code 20210630T224355 --initial-epoch 58[39m[K[A[19C[1m[31mp[1m[31my[0m[39m[1m[31mp[1m[31my[1m[31mt[0m[39m[39mh[39mo[39mn[39m [39mm[39ma[39mi[39mn[39m.[39mp[39my[39m [39m-[39m-[39mg[39m [39m0[39m [39m-[39m-[39mu[39ms[39me[39m_[39ma[39ml[39ml[39m_[39mr[39me[39mg[39mi[39mo[39mn[39m [39mT[39mr[39mu[39me[39m [39m-[39m-[39mm[39mo[39md[39me[39m [39mt[39me[39ms[39mt[39m [39m-[39m-[39mn[39ma[39mm[39me[39m [39mA[39mL[39mL[39m_[39mr[39me[39ma[39ml[39m_[39ms[39mw[39mi[39mn[39me[39mn[39mc[39mo[39md[39me[39mr[39m3[39md[39m_[39m6[39m8[39m8[39m0[39m8[39m0[39m [39m-[39m-[39mti[39mm[39me[39m-[39mc[39mo[39md[39me[39m [39m2[39m0[39m2[39m1[39m0[39m6[39m3[39m0[39mT[39m2[39m2[39m4[39m3[39m5[39m5[39m [39m-[39m-[39mi[39mn[39mi[39mt[39mi[39ma[39ml[39m-[39me[39mp[39mo[39mc[39mh[39m [39m5[39m8[A[18C[0m[32mp[0m[32my[0m[32mt[32mh[32mo[32mn[39m [4mm[4ma[4mi[4mn[4m.[4mp[4my[24m[1B[32D[?1l>[?2004l
+]2;python main.py --g 0 --use_all_region True --mode test --name  --time-code   ]1;pythonTraceback (most recent call last):
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 21, in <module>
+    from pytorch_lightning.plugins import DDPPlugin
+ImportError: cannot import name 'DDPPlugin' from 'pytorch_lightning.plugins' (/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/plugins/__init__.py)
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(vs_env) [01;31m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hpython main.py --g 0 --use_all_region True --mode test --name ALL_real_swinencoder3d_688080 --time-code 20210630T224355 --initial-epoch 58[K[A[18C[32mp[32my[32mt[32mh[32mo[32mn[39m [4mm[4ma[4mi[4mn[4m.[4mp[4my[24m[1B[32D[?1l>[?2004l
+]2;python main.py --g 0 --use_all_region True --mode test --name  --time-code   ]1;python/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Using data for region R1 | size: 256 | Nile Region
+Seed set to 0
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R4 | size: 256 | Central
+Maghreb
+Using data for region R5 | size: 256 | South
+Mediterranean
+Using data for region R6 | size: 256 | Central
+Europe
+------------------------------------------------------------------------------------------------------------------------
+      Layer (type)                                  Input Shape             Output Shape         Param #     Tr. Param #
+========================================================================================================================
+        Identity-1                          [1, 4, 4, 256, 256]      [1, 4, 4, 256, 256]               0               0
+    PatchEmbed3D-2                          [1, 4, 4, 256, 256]     [1, 16, 4, 128, 128]             304             304
+         Dropout-3                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]               0               0
+      BasicLayer-4                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          18,528          18,528
+      BasicLayer-5                         [1, 16, 4, 128, 128]       [1, 32, 4, 64, 64]          58,400          58,400
+      BasicLayer-6                           [1, 32, 4, 64, 64]       [1, 64, 4, 32, 32]         213,792         213,792
+     DecodeLayer-7       [1, 64, 4, 32, 32], [1, 64, 4, 32, 32]       [1, 64, 4, 32, 32]         277,824         277,824
+     DecodeLayer-8       [1, 64, 4, 32, 32], [1, 32, 4, 64, 64]       [1, 32, 4, 64, 64]          87,104          87,104
+     DecodeLayer-9     [1, 32, 4, 64, 64], [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          30,528          30,528
+           Head-10                         [1, 16, 4, 128, 128]     [1, 32, 4, 256, 256]           1,600           1,600
+========================================================================================================================
+Total params: 688,080
+Trainable params: 688,080
+Non-trainable params: 0
+------------------------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 393, in <module>
+    main()
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 389, in main
+    train(options.region, options.mode, options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 280, in train
+    trainer = get_trainer(options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 214, in get_trainer
+    trainer = pl.Trainer(gpus=options.gpus,
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/utilities/argparse.py", line 70, in insert_env_defaults
+    return fn(self, **kwargs)
+TypeError: Trainer.__init__() got an unexpected keyword argument 'gpus'
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(vs_env) [01;31m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hpython main.py --g 0 --use_all_region True --mode test --name ALL_real_swinencoder3d_688080 --time-code 20210630T224355 --initial-epoch 58[K[A[18C[32mp[32my[32mt[32mh[32mo[32mn[39m [4mm[4ma[4mi[4mn[4m.[4mp[4my[24m[1B[32D[?1l>[?2004l
+]2;python main.py --g 0 --use_all_region True --mode test --name  --time-code   ]1;python/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Using data for region R1 | size: 256 | Nile Region
+Seed set to 0
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R4 | size: 256 | Central
+Maghreb
+Using data for region R5 | size: 256 | South
+Mediterranean
+Using data for region R6 | size: 256 | Central
+Europe
+------------------------------------------------------------------------------------------------------------------------
+      Layer (type)                                  Input Shape             Output Shape         Param #     Tr. Param #
+========================================================================================================================
+        Identity-1                          [1, 4, 4, 256, 256]      [1, 4, 4, 256, 256]               0               0
+    PatchEmbed3D-2                          [1, 4, 4, 256, 256]     [1, 16, 4, 128, 128]             304             304
+         Dropout-3                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]               0               0
+      BasicLayer-4                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          18,528          18,528
+      BasicLayer-5                         [1, 16, 4, 128, 128]       [1, 32, 4, 64, 64]          58,400          58,400
+      BasicLayer-6                           [1, 32, 4, 64, 64]       [1, 64, 4, 32, 32]         213,792         213,792
+     DecodeLayer-7       [1, 64, 4, 32, 32], [1, 64, 4, 32, 32]       [1, 64, 4, 32, 32]         277,824         277,824
+     DecodeLayer-8       [1, 64, 4, 32, 32], [1, 32, 4, 64, 64]       [1, 32, 4, 64, 64]          87,104          87,104
+     DecodeLayer-9     [1, 32, 4, 64, 64], [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          30,528          30,528
+           Head-10                         [1, 16, 4, 128, 128]     [1, 32, 4, 256, 256]           1,600           1,600
+========================================================================================================================
+Total params: 688,080
+Trainable params: 688,080
+Non-trainable params: 0
+------------------------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 394, in <module>
+    main()
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 390, in main
+    train(options.region, options.mode, options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 281, in train
+    trainer = get_trainer(options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 214, in get_trainer
+    trainer = pl.Trainer(accelerator="gpu",
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/utilities/argparse.py", line 70, in insert_env_defaults
+    return fn(self, **kwargs)
+TypeError: Trainer.__init__() got an unexpected keyword argument 'progress_bar_refresh_rate'
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(vs_env) [01;31m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hp[1m[31mp[0m[39m[1m[31mp[0m[39m[90mython main.py --g 0 --use_all_region True --mode test --name ALL_real_swinencoder3d_688080 --t[90mi[90mme-code 20210630T224355 --initial-epoch 58[39m[K[A[19C[1m[31mp[1m[31my[0m[39m[39mt[39mh[39mo[39mn[39m [39mm[39ma[39mi[39mn[39m.[39mp[39my[39m [39m-[39m-[39mg[39m [39m0[39m [39m-[39m-[39mu[39ms[39me[39m_[39ma[39ml[39ml[39m_[39mr[39me[39mg[39mi[39mo[39mn[39m [39mT[39mr[39mu[39me[39m [39m-[39m-[39mm[39mo[39md[39me[39m [39mt[39me[39ms[39mt[39m [39m-[39m-[39mn[39ma[39mm[39me[39m [39mA[39mL[39mL[39m_[39mr[39me[39ma[39ml[39m_[39ms[39mw[39mi[39mn[39me[39mn[39mc[39mo[39md[39me[39mr[39m3[39md[39m_[39m6[39m8[39m8[39m0[39m8[39m0[39m [39m-[39m-[39mti[39mm[39me[39m-[39mc[39mo[39md[39me[39m [39m2[39m0[39m2[39m1[39m0[39m6[39m3[39m0[39mT[39m2[39m2[39m4[39m3[39m5[39m5[39m [39m-[39m-[39mi[39mn[39mi[39mt[39mi[39ma[39ml[39m-[39me[39mp[39mo[39mc[39mh[39m [39m5[39m8[A[18C[0m[32mp[0m[32my[32mt[32mh[32mo[32mn[39m [4mm[4ma[4mi[4mn[4m.[4mp[4my[24m[1B[32D[?1l>[?2004l
+]2;python main.py --g 0 --use_all_region True --mode test --name  --time-code   ]1;python/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Using data for region R1 | size: 256 | Nile Region
+Seed set to 0
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R4 | size: 256 | Central
+Maghreb
+Using data for region R5 | size: 256 | South
+Mediterranean
+Using data for region R6 | size: 256 | Central
+Europe
+------------------------------------------------------------------------------------------------------------------------
+      Layer (type)                                  Input Shape             Output Shape         Param #     Tr. Param #
+========================================================================================================================
+        Identity-1                          [1, 4, 4, 256, 256]      [1, 4, 4, 256, 256]               0               0
+    PatchEmbed3D-2                          [1, 4, 4, 256, 256]     [1, 16, 4, 128, 128]             304             304
+         Dropout-3                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]               0               0
+      BasicLayer-4                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          18,528          18,528
+      BasicLayer-5                         [1, 16, 4, 128, 128]       [1, 32, 4, 64, 64]          58,400          58,400
+      BasicLayer-6                           [1, 32, 4, 64, 64]       [1, 64, 4, 32, 32]         213,792         213,792
+     DecodeLayer-7       [1, 64, 4, 32, 32], [1, 64, 4, 32, 32]       [1, 64, 4, 32, 32]         277,824         277,824
+     DecodeLayer-8       [1, 64, 4, 32, 32], [1, 32, 4, 64, 64]       [1, 32, 4, 64, 64]          87,104          87,104
+     DecodeLayer-9     [1, 32, 4, 64, 64], [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          30,528          30,528
+           Head-10                         [1, 16, 4, 128, 128]     [1, 32, 4, 256, 256]           1,600           1,600
+========================================================================================================================
+Total params: 688,080
+Trainable params: 688,080
+Non-trainable params: 0
+------------------------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 394, in <module>
+    main()
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 390, in main
+    train(options.region, options.mode, options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 281, in train
+    trainer = get_trainer(options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 214, in get_trainer
+    trainer = pl.Trainer(accelerator="gpu",
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/utilities/argparse.py", line 70, in insert_env_defaults
+    return fn(self, **kwargs)
+TypeError: Trainer.__init__() got an unexpected keyword argument 'resume_from_checkpoint'
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(vs_env) [01;31m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hpython main.py --g 0 --use_all_region True --mode test --name ALL_real_swinencoder3d_688080 --time-code 20210630T224355 --initial-epoch 58[K[A[18C[32mp[32my[32mt[32mh[32mo[32mn[39m [4mm[4ma[4mi[4mn[4m.[4mp[4my[24m[1B[32D[?1l>[?2004l
+]2;python main.py --g 0 --use_all_region True --mode test --name  --time-code   ]1;python/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Using data for region R1 | size: 256 | Nile Region
+Seed set to 0
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R4 | size: 256 | Central
+Maghreb
+Using data for region R5 | size: 256 | South
+Mediterranean
+Using data for region R6 | size: 256 | Central
+Europe
+------------------------------------------------------------------------------------------------------------------------
+      Layer (type)                                  Input Shape             Output Shape         Param #     Tr. Param #
+========================================================================================================================
+        Identity-1                          [1, 4, 4, 256, 256]      [1, 4, 4, 256, 256]               0               0
+    PatchEmbed3D-2                          [1, 4, 4, 256, 256]     [1, 16, 4, 128, 128]             304             304
+         Dropout-3                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]               0               0
+      BasicLayer-4                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          18,528          18,528
+      BasicLayer-5                         [1, 16, 4, 128, 128]       [1, 32, 4, 64, 64]          58,400          58,400
+      BasicLayer-6                           [1, 32, 4, 64, 64]       [1, 64, 4, 32, 32]         213,792         213,792
+     DecodeLayer-7       [1, 64, 4, 32, 32], [1, 64, 4, 32, 32]       [1, 64, 4, 32, 32]         277,824         277,824
+     DecodeLayer-8       [1, 64, 4, 32, 32], [1, 32, 4, 64, 64]       [1, 32, 4, 64, 64]          87,104          87,104
+     DecodeLayer-9     [1, 32, 4, 64, 64], [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          30,528          30,528
+           Head-10                         [1, 16, 4, 128, 128]     [1, 32, 4, 256, 256]           1,600           1,600
+========================================================================================================================
+Total params: 688,080
+Trainable params: 688,080
+Non-trainable params: 0
+------------------------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 394, in <module>
+    main()
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 390, in main
+    train(options.region, options.mode, options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 281, in train
+    trainer = get_trainer(options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 214, in get_trainer
+    trainer = pl.Trainer(accelerator="gpu",
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/utilities/argparse.py", line 70, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 404, in __init__
+    self._accelerator_connector = _AcceleratorConnector(
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py", line 146, in __init__
+    self._check_device_config_and_set_final_flags(devices=devices, num_nodes=num_nodes)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py", line 327, in _check_device_config_and_set_final_flags
+    raise MisconfigurationException(
+lightning_fabric.utilities.exceptions.MisconfigurationException: `Trainer(devices='0')` value is not a valid input using cuda accelerator.
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(vs_env) [01;31m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hpython main.py --g 0 --use_all_region True --mode test --name ALL_real_swinencoder3d_688080 --time-code 20210630T224355 --initial-epoch 58[K[A[18C[32mp[32my[32mt[32mh[32mo[32mn[39m [4mm[4ma[4mi[4mn[4m.[4mp[4my[24m[1B[32D[?1l>[?2004l
+]2;python main.py --g 0 --use_all_region True --mode test --name  --time-code   ]1;python/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Using data for region R1 | size: 256 | Nile Region
+Seed set to 0
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R4 | size: 256 | Central
+Maghreb
+Using data for region R5 | size: 256 | South
+Mediterranean
+Using data for region R6 | size: 256 | Central
+Europe
+------------------------------------------------------------------------------------------------------------------------
+      Layer (type)                                  Input Shape             Output Shape         Param #     Tr. Param #
+========================================================================================================================
+        Identity-1                          [1, 4, 4, 256, 256]      [1, 4, 4, 256, 256]               0               0
+    PatchEmbed3D-2                          [1, 4, 4, 256, 256]     [1, 16, 4, 128, 128]             304             304
+         Dropout-3                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]               0               0
+      BasicLayer-4                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          18,528          18,528
+      BasicLayer-5                         [1, 16, 4, 128, 128]       [1, 32, 4, 64, 64]          58,400          58,400
+      BasicLayer-6                           [1, 32, 4, 64, 64]       [1, 64, 4, 32, 32]         213,792         213,792
+     DecodeLayer-7       [1, 64, 4, 32, 32], [1, 64, 4, 32, 32]       [1, 64, 4, 32, 32]         277,824         277,824
+     DecodeLayer-8       [1, 64, 4, 32, 32], [1, 32, 4, 64, 64]       [1, 32, 4, 64, 64]          87,104          87,104
+     DecodeLayer-9     [1, 32, 4, 64, 64], [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          30,528          30,528
+           Head-10                         [1, 16, 4, 128, 128]     [1, 32, 4, 256, 256]           1,600           1,600
+========================================================================================================================
+Total params: 688,080
+Trainable params: 688,080
+Non-trainable params: 0
+------------------------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 394, in <module>
+    main()
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 390, in main
+    train(options.region, options.mode, options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 281, in train
+    trainer = get_trainer(options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 214, in get_trainer
+    trainer = pl.Trainer(accelerator="gpu",
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/utilities/argparse.py", line 70, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 404, in __init__
+    self._accelerator_connector = _AcceleratorConnector(
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py", line 146, in __init__
+    self._check_device_config_and_set_final_flags(devices=devices, num_nodes=num_nodes)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py", line 327, in _check_device_config_and_set_final_flags
+    raise MisconfigurationException(
+lightning_fabric.utilities.exceptions.MisconfigurationException: `Trainer(devices='0')` value is not a valid input using cuda accelerator.
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(vs_env) [01;31m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hpython main.py --g 0 --use_all_region True --mode test --name ALL_real_swinencoder3d_688080 --time-code 20210630T224355 --initial-epoch 58[K[A[18C[32mp[32my[32mt[32mh[32mo[32mn[39m [4mm[4ma[4mi[4mn[4m.[4mp[4my[24m[1B[32D[?1l>[?2004l
+]2;python main.py --g 0 --use_all_region True --mode test --name  --time-code   ]1;python/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Using data for region R1 | size: 256 | Nile Region
+Seed set to 0
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R4 | size: 256 | Central
+Maghreb
+Using data for region R5 | size: 256 | South
+Mediterranean
+Using data for region R6 | size: 256 | Central
+Europe
+------------------------------------------------------------------------------------------------------------------------
+      Layer (type)                                  Input Shape             Output Shape         Param #     Tr. Param #
+========================================================================================================================
+        Identity-1                          [1, 4, 4, 256, 256]      [1, 4, 4, 256, 256]               0               0
+    PatchEmbed3D-2                          [1, 4, 4, 256, 256]     [1, 16, 4, 128, 128]             304             304
+         Dropout-3                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]               0               0
+      BasicLayer-4                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          18,528          18,528
+      BasicLayer-5                         [1, 16, 4, 128, 128]       [1, 32, 4, 64, 64]          58,400          58,400
+      BasicLayer-6                           [1, 32, 4, 64, 64]       [1, 64, 4, 32, 32]         213,792         213,792
+     DecodeLayer-7       [1, 64, 4, 32, 32], [1, 64, 4, 32, 32]       [1, 64, 4, 32, 32]         277,824         277,824
+     DecodeLayer-8       [1, 64, 4, 32, 32], [1, 32, 4, 64, 64]       [1, 32, 4, 64, 64]          87,104          87,104
+     DecodeLayer-9     [1, 32, 4, 64, 64], [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          30,528          30,528
+           Head-10                         [1, 16, 4, 128, 128]     [1, 32, 4, 256, 256]           1,600           1,600
+========================================================================================================================
+Total params: 688,080
+Trainable params: 688,080
+Non-trainable params: 0
+------------------------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 394, in <module>
+    main()
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 390, in main
+    train(options.region, options.mode, options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 281, in train
+    trainer = get_trainer(options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 214, in get_trainer
+    trainer = pl.Trainer(accelerator="gpu",
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/utilities/argparse.py", line 70, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 404, in __init__
+    self._accelerator_connector = _AcceleratorConnector(
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py", line 146, in __init__
+    self._check_device_config_and_set_final_flags(devices=devices, num_nodes=num_nodes)
+  File "/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py", line 327, in _check_device_config_and_set_final_flags
+    raise MisconfigurationException(
+lightning_fabric.utilities.exceptions.MisconfigurationException: `Trainer(devices=0)` value is not a valid input using cuda accelerator.
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(vs_env) [01;31m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hpython main.py --g 0 --use_all_region True --mode test --name ALL_real_swinencoder3d_688080 --time-code 20210630T224355 --initial-epoch 58[K[A[18C[32mp[32my[32mt[32mh[32mo[32mn[39m [4mm[4ma[4mi[4mn[4m.[4mp[4my[24m[1B[32D[A[155C[P[75Cim[P[41C [A[37C1 --use_all_region True --mode test --name ALL_real_swinencoder3d_688080 --time-code 20210630T224355 --initial-epoch 58[A[38C[?1l>[?2004l[1B
+]2;python main.py --g 1 --use_all_region True --mode test --name  --time-code   ]1;python/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Using data for region R1 | size: 256 | Nile Region
+Seed set to 0
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R4 | size: 256 | Central
+Maghreb
+Using data for region R5 | size: 256 | South
+Mediterranean
+Using data for region R6 | size: 256 | Central
+Europe
+------------------------------------------------------------------------------------------------------------------------
+      Layer (type)                                  Input Shape             Output Shape         Param #     Tr. Param #
+========================================================================================================================
+        Identity-1                          [1, 4, 4, 256, 256]      [1, 4, 4, 256, 256]               0               0
+    PatchEmbed3D-2                          [1, 4, 4, 256, 256]     [1, 16, 4, 128, 128]             304             304
+         Dropout-3                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]               0               0
+      BasicLayer-4                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          18,528          18,528
+      BasicLayer-5                         [1, 16, 4, 128, 128]       [1, 32, 4, 64, 64]          58,400          58,400
+      BasicLayer-6                           [1, 32, 4, 64, 64]       [1, 64, 4, 32, 32]         213,792         213,792
+     DecodeLayer-7       [1, 64, 4, 32, 32], [1, 64, 4, 32, 32]       [1, 64, 4, 32, 32]         277,824         277,824
+     DecodeLayer-8       [1, 64, 4, 32, 32], [1, 32, 4, 64, 64]       [1, 32, 4, 64, 64]          87,104          87,104
+     DecodeLayer-9     [1, 32, 4, 64, 64], [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          30,528          30,528
+           Head-10                         [1, 16, 4, 128, 128]     [1, 32, 4, 256, 256]           1,600           1,600
+========================================================================================================================
+Total params: 688,080
+Trainable params: 688,080
+Non-trainable params: 0
+------------------------------------------------------------------------------------------------------------------------
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+Extra variables:  | spatial_dim: (256, 256)  | collapse_time: False | in channels depth: 4 | len_seq_in: 4
+Traceback (most recent call last):
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 394, in <module>
+    main()
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 390, in main
+    train(options.region, options.mode, options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 287, in train
+    checkpoint_path = trainer.resume_from_checkpoint
+AttributeError: 'Trainer' object has no attribute 'resume_from_checkpoint'
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(vs_env) [01;31m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hpython main.py --g 1 --use_all_region True --mode test --name ALL_real_swinencoder3d_688080 --time-code 20210630T224355 --initial-epoch 58[K[A[18C[32mp[32my[32mt[32mh[32mo[32mn[39m [4mm[4ma[4mi[4mn[4m.[4mp[4my[24m[1B[32D[?1l>[?2004l
+]2;python main.py --g 1 --use_all_region True --mode test --name  --time-code   ]1;python/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Using data for region R1 | size: 256 | Nile Region
+Seed set to 0
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R4 | size: 256 | Central
+Maghreb
+Using data for region R5 | size: 256 | South
+Mediterranean
+Using data for region R6 | size: 256 | Central
+Europe
+------------------------------------------------------------------------------------------------------------------------
+      Layer (type)                                  Input Shape             Output Shape         Param #     Tr. Param #
+========================================================================================================================
+        Identity-1                          [1, 4, 4, 256, 256]      [1, 4, 4, 256, 256]               0               0
+    PatchEmbed3D-2                          [1, 4, 4, 256, 256]     [1, 16, 4, 128, 128]             304             304
+         Dropout-3                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]               0               0
+      BasicLayer-4                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          18,528          18,528
+      BasicLayer-5                         [1, 16, 4, 128, 128]       [1, 32, 4, 64, 64]          58,400          58,400
+      BasicLayer-6                           [1, 32, 4, 64, 64]       [1, 64, 4, 32, 32]         213,792         213,792
+     DecodeLayer-7       [1, 64, 4, 32, 32], [1, 64, 4, 32, 32]       [1, 64, 4, 32, 32]         277,824         277,824
+     DecodeLayer-8       [1, 64, 4, 32, 32], [1, 32, 4, 64, 64]       [1, 32, 4, 64, 64]          87,104          87,104
+     DecodeLayer-9     [1, 32, 4, 64, 64], [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          30,528          30,528
+           Head-10                         [1, 16, 4, 128, 128]     [1, 32, 4, 256, 256]           1,600           1,600
+========================================================================================================================
+Total params: 688,080
+Trainable params: 688,080
+Non-trainable params: 0
+------------------------------------------------------------------------------------------------------------------------
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+Extra variables:  | spatial_dim: (256, 256)  | collapse_time: False | in channels depth: 4 | len_seq_in: 4
+Traceback (most recent call last):
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 394, in <module>
+    main()
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 390, in main
+    train(options.region, options.mode, options)
+  File "/home/prati/Weather4cast2021-SwinEncoderDecoder/main.py", line 287, in train
+    checkpoint_path = resume_from_checkpoint
+NameError: name 'resume_from_checkpoint' is not defined
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;prati@DellG15:~/Weather4cast2021-SwinEncoderDecoder]1;..ncoderDecoder]7;file://DellG15/home/prati/Weather4cast2021-SwinEncoderDecoder\[0m[27m[24m[J(vs_env) [01;31m➜  [36mWeather4cast2021-SwinEncoderDecoder[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hpython main.py --g 1 --use_all_region True --mode test --name ALL_real_swinencoder3d_688080 --time-code 20210630T224355 --initial-epoch 58[K[A[18C[32mp[32my[32mt[32mh[32mo[32mn[39m [4mm[4ma[4mi[4mn[4m.[4mp[4my[24m[1B[32D[?1l>[?2004l
+]2;python main.py --g 1 --use_all_region True --mode test --name  --time-code   ]1;python/home/prati/miniconda3/envs/vs_env/lib/python3.10/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Using data for region R1 | size: 256 | Nile Region
+Seed set to 0
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R1 | size: 256 | Nile Region
+Using data for region R2 | size: 256 | Eastern
+Europe
+Using data for region R3 | size: 256 | South West
+Europe
+Using data for region R4 | size: 256 | Central
+Maghreb
+Using data for region R5 | size: 256 | South
+Mediterranean
+Using data for region R6 | size: 256 | Central
+Europe
+------------------------------------------------------------------------------------------------------------------------
+      Layer (type)                                  Input Shape             Output Shape         Param #     Tr. Param #
+========================================================================================================================
+        Identity-1                          [1, 4, 4, 256, 256]      [1, 4, 4, 256, 256]               0               0
+    PatchEmbed3D-2                          [1, 4, 4, 256, 256]     [1, 16, 4, 128, 128]             304             304
+         Dropout-3                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]               0               0
+      BasicLayer-4                         [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          18,528          18,528
+      BasicLayer-5                         [1, 16, 4, 128, 128]       [1, 32, 4, 64, 64]          58,400          58,400
+      BasicLayer-6                           [1, 32, 4, 64, 64]       [1, 64, 4, 32, 32]         213,792         213,792
+     DecodeLayer-7       [1, 64, 4, 32, 32], [1, 64, 4, 32, 32]       [1, 64, 4, 32, 32]         277,824         277,824
+     DecodeLayer-8       [1, 64, 4, 32, 32], [1, 32, 4, 64, 64]       [1, 32, 4, 64, 64]          87,104          87,104
+     DecodeLayer-9     [1, 32, 4, 64, 64], [1, 16, 4, 128, 128]     [1, 16, 4, 128, 128]          30,528          30,528
+           Head-10                         [1, 16, 4, 128, 128]     [1, 32, 4, 256, 256]           1,600           1,600
+========================================================================================================================
+Total params: 688,080
+Trainable params: 688,080
+Non-trainable params: 0
+------------------------------------------------------------------------------------------------------------------------
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+Extra variables:  | spatial_dim: (256, 256)  | collapse_time: False | in channels depth: 4 | len_seq_in: 4
+Namespace(gpus='1', region='R1', use_all_region=True, mode='test', held_out=False, competition='stage-1', collapse_time=False, use_static=False, use_time_slot=False, use_cloud_type=False, use_all_variables=False, populate_mask=True, precision=32, epochs=100, batch_size=1, manual_seed=0, log_dir='logs', model_dir='', name='ALL_real_swinencoder3d_688080', time_code='20210630T224355', initial_epoch=58, memory_efficient=True, net_type='real', patch_size=2, nb_layers=4, sf=16, stages=3, classifier_activation='sigmoid', modify_activation=True, inplace_activation=True, dropout=0.0, optimizer='adam', lr=0.0001, momentum=0.9, beta_1=0.9, beta_2=0.999, epsilon=1e-08, weight_decay=1e-06, workers=6, in_channels=4, n_classes=128, depth=4, wf=6, padding=True, batch_norm=False, up_mode='upconv', data_path='D:/KU_Works/Datasets/Weather4cast/2021/w4c-core-stage-1/R1', static_paths={'l': 'D:/KU_Works/Datasets/Weather4cast/2021/statics/Navigation_of_S_NWC_CT_MSG4_Europe-VISIR_20201106T120000Z.nc', 'e': 'D:/KU_Works/Datasets/Weather4cast/2021/statics/S_NWC_TOPO_MSG4_+000.0_Europe-VISIR.raw'}, train_splits='/home/prati/Weather4cast2021-SwinEncoderDecoder/splits.csv', test_splits='/home/prati/Weather4cast2021-SwinEncoderDecoder/test_split.json', black_list_path='/home/prati/Weather4cast2021-SwinEncoderDecoder/blacklist.json', extra_data='', target_vars=['temperature', 'crr_intensity', 'asii_turb_trop_prob', 'cma'], products={'CTTH': ['temperature'], 'CRR': ['crr_intensity'], 'ASII': ['asii_turb_trop_prob'], 'CMA': ['cma']}, input_vars=['temperature', 'crr_intensity', 'asii_turb_trop_prob', 'cma'], weigths={'temperature': 0.25, 'crr_intensity': 0.25, 'asii_turb_trop_prob': 0.25, 'cma': 0.25}, spatial_dim=(256, 256), crop_static={'x_start': 1850, 'y_start': 760, 'size': 256}, crop_in=None, crop_out=None, train_region_id='R1_mse', region_id='R1', len_seq_in=4, bins_to_predict=32, len_seq_out=32, day_bins=96, seq_mode='sliding_window', width=256, height=256, control_params={'use_all_variables': False, 'use_cloud_type': False, 'use_time_slot': False, 'use_static': False}, preprocess={'source': {'cma': {'fill_value': 0, 'max_value': 1, 'add_offset': 0, 'scale_factor': 1}, 'temperature': {'fill_value': 0, 'max_value': 35000, 'add_offset': 130, 'scale_factor': np.float32(0.01)}, 'crr_intensity': {'fill_value': 0, 'max_value': 500, 'add_offset': 0, 'scale_factor': np.float32(0.1)}, 'asii_turb_trop_prob': {'fill_value': 0, 'max_value': 100, 'add_offset': 0, 'scale_factor': 1}}, 'target': {'cma': {'fill_value': nan, 'max_value': 1, 'add_offset': 0, 'scale_factor': 1}, 'temperature': {'fill_value': nan, 'max_value': 35000, 'add_offset': 130, 'scale_factor': np.float32(0.01)}, 'crr_intensity': {'fill_value': nan, 'max_value': 500, 'add_offse
