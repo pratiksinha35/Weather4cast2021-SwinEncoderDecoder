@@ -28,6 +28,8 @@ from models import HyperSwinEncoderDecoder3D
 from utils.w4c_dataloader import create_dataset
 from train_utils import model_summary 
 
+from utils.custom_test import NWCSAFH5
+
 
 def get_held_out_params(params):
     held_out_params = params
@@ -44,7 +46,7 @@ class DataModule(pl.LightningDataModule):
     """ Class to handle training/validation splits in a single object
     """
 
-    def __init__(self, params, training_params, args):
+    def __init__(self, params, training_params, args, use_h5, h5_path):
         super().__init__()
         self.params = params
         self.training_params = training_params
@@ -55,8 +57,17 @@ class DataModule(pl.LightningDataModule):
 
         self.train = self.val = self.predict = self.held_out = None
         self.all_regions = self.core_regions = None
+        self.use_h5 = use_h5
+        self.h5_path = h5_path
 
     def setup(self, stage=None):
+        if self.use_h5:
+            self.train = None
+            self.val = None
+            self.predict = NWCSAFH5(self.h5_path)
+            self.held_out = None
+            self.train_dims = len(self.predict)
+            return
         if self.params['use_all_region']:
             train_datasets = []
             val_datasets = []
@@ -118,20 +129,41 @@ class DataModule(pl.LightningDataModule):
         return dl
 
     def train_dataloader(self):
-        ds = self.train  # create_dataset('training', self.params)
-        return self.__load_dataloader(ds, shuffle=True, pin=True)
+        if self.train is None:
+            return None
+        return self.__load_dataloader(self.train, shuffle=True, pin=True)
 
     def val_dataloader(self):
-        val_loader = self.__load_dataloader(self.val, shuffle=False, pin=True)
-        predict_loader = self.__load_dataloader(self.predict, shuffle=False, pin=True)
-        return [val_loader, predict_loader]
+        loaders = []
+        if self.val is not None:
+            loaders.append(self.__load_dataloader(self.val, shuffle=False, pin=True))
+        if self.predict is not None:
+            loaders.append(self.__load_dataloader(self.predict, shuffle=False, pin=True))
+        return loaders
 
     def test_dataloader(self):
-        if self.args.held_out:  # using held-out data
-            predict_loader = self.__load_dataloader(self.held_out, shuffle=False, pin=True)
-        else:
-            predict_loader = self.__load_dataloader(self.predict, shuffle=False, pin=True)
-        return predict_loader
+        if self.args.held_out and self.held_out is not None:
+            return self.__load_dataloader(self.held_out, shuffle=False, pin=True)
+        elif self.predict is not None:
+            return self.__load_dataloader(self.predict, shuffle=False, pin=True)
+        return None
+
+
+    # def train_dataloader(self):
+    #     ds = self.train  # create_dataset('training', self.params)
+    #     return self.__load_dataloader(ds, shuffle=True, pin=True)
+
+    # def val_dataloader(self):
+    #     val_loader = self.__load_dataloader(self.val, shuffle=False, pin=True)
+    #     predict_loader = self.__load_dataloader(self.predict, shuffle=False, pin=True)
+    #     return [val_loader, predict_loader]
+
+    # def test_dataloader(self):
+    #     if self.args.held_out:  # using held-out data
+    #         predict_loader = self.__load_dataloader(self.held_out, shuffle=False, pin=True)
+    #     else:
+    #         predict_loader = self.__load_dataloader(self.predict, shuffle=False, pin=True)
+    #     return predict_loader
 
 
 def print_training(params):
@@ -261,7 +293,8 @@ def train(region_id, mode, options=None):
     # ------------
     # Data and model params
     # ------------
-    data = DataModule(params['data_params'], training_params, options)
+    data = DataModule(params['data_params'], training_params, options, use_h5=True,
+                  h5_path='/home/prati/Weather4cast2023-data/boxi_0015.test.reflbt0.ns.h5')
     data.setup()
 
     # add other depending args

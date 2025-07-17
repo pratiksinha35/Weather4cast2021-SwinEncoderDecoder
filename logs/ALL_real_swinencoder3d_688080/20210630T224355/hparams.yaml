@@ -1,11 +1,5 @@
 args: !!python/object:argparse.Namespace
-  all_regions:
-  - R1
-  - R2
-  - R3
-  - R4
-  - R5
-  - R6
+  all_regions: null
   batch_norm: false
   batch_size: 1
   beta_1: 0.9
@@ -20,10 +14,7 @@ args: !!python/object:argparse.Namespace
     use_cloud_type: false
     use_static: false
     use_time_slot: false
-  core_regions:
-  - R1
-  - R2
-  - R3
+  core_regions: null
   crop_in: null
   crop_out: null
   crop_static: &id003
@@ -163,7 +154,7 @@ args: !!python/object:argparse.Namespace
   - cma
   test_splits: /home/prati/Weather4cast2021-SwinEncoderDecoder/test_split.json
   time_code: 20210630T224355
-  train_dims: 49794
+  train_dims: 240
   train_region_id: R1_mse
   train_splits: /home/prati/Weather4cast2021-SwinEncoderDecoder/splits.csv
   up_mode: upconv
