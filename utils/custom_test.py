@@ -3,25 +3,26 @@ import h5py
 import torch
 
 class NWCSAFH5(Dataset):
-    def __init__(self, h5_path):
+    def __init__(self, h5_path, seq_len=4):
         self.h5_path = h5_path
         self.h5_file = h5py.File(h5_path, 'r')
         
         self.data = self.h5_file['REFL-BT']  # shape: (240, 11, 252, 252)
+        self.seq_len = seq_len
+        self.num_sequences = self.data.shape[0] // self.seq_len  # should be 60
 
     def __len__(self):
-        return self.data.shape[0]
+        return self.num_sequences
     
     def __getitem__(self, idx):
-        full_seq = self.data[idx]  # shape: (11, 252, 252)
+        start = idx * self.seq_len
+        end = start + self.seq_len
         
-        x = full_seq[:-1]  # first 10 timesteps
-        y = full_seq[-1]   # predict the 11th timestep
+        # Shape: (4, 11, 252, 252)
+        x = self.data[start:end]
+        x = torch.tensor(x, dtype=torch.float32)
+        
+        metadata = {"sequence_index": idx}
 
-        # Convert to torch tensors
-        x = torch.tensor(x, dtype=torch.float32)      # shape: (10, 252, 252)
-        y = torch.tensor(y, dtype=torch.float32)      # shape: (252, 252)
+        return x, metadata
 
-        metadata = {"index": idx}
-
-        return x, y, metadata

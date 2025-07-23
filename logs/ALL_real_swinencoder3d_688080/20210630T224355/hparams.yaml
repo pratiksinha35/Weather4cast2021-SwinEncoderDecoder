@@ -154,7 +154,7 @@ args: !!python/object:argparse.Namespace
   - cma
   test_splits: /home/prati/Weather4cast2021-SwinEncoderDecoder/test_split.json
   time_code: 20210630T224355
-  train_dims: 240
+  train_dims: 60
   train_region_id: R1_mse
   train_splits: /home/prati/Weather4cast2021-SwinEncoderDecoder/splits.csv
   up_mode: upconv

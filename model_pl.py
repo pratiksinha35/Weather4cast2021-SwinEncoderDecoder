@@ -111,11 +111,17 @@ class Model(pl.LightningModule):
         else:  # for prediction
             self.save_prediction(y_hat, metadata, batch_idx, loader_idx)
 
-    def test_step(self, batch, batch_idx):  # , phase='test'):
+    # def test_step(self, batch, batch_idx):
 
-        x, y, metadata = self.process_batch(batch)
+    #     x, y, metadata = self.process_batch(batch)
+    #     y_hat = self.forward(x)
+    #     self.save_prediction(y_hat, metadata, batch_idx, loader_idx=0)
+    def test_step(self, batch, batch_idx):
+        x, metadata = self.process_batch(batch)
         y_hat = self.forward(x)
         self.save_prediction(y_hat, metadata, batch_idx, loader_idx=0)
+
+
 
     def configure_optimizers(self):
         other_args = {}
